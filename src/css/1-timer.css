@@ -1,92 +1,75 @@
-/* Vite promo styles */
-.vite-promo {
-  padding: 5rem 0;
-}
-
-.vite-promo .container {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-
-  width: 86vw;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.vite-promo .wrapper {
-  max-width: 36rem;
-}
-
-.vite-promo .title,
-.vite-promo .text {
-  margin-bottom: 1.5rem;
-
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.14;
-
-  color: #213547;
-}
-
-.vite-promo .gradient {
-  display: inline-block;
-  background-image: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.vite-promo .tagline {
-  font-size: 1.5rem;
+input {
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #808080;
   line-height: 1.5;
-  color: rgba(60, 60, 60, 0.7);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  margin-bottom: 32px;
 }
 
-.vite-promo .actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+input:hover {
+  border-color: #2e2f42;
 }
 
-.vite-promo .link {
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
+input:active {
+  border-color: #4e75ff;
+}
 
+input:disabled {
+  border-color: #808080;
+  color: #808080;
+}
+
+button {
+  border: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
   font-weight: 500;
-  text-align: center;
-  white-space: nowrap;
-  color: rgba(255, 255, 255, 0.87);
-
-  background-color: #646cff;
-  border: 1px solid transparent;
-  border-radius: 1.25rem;
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
-.vite-promo .link:hover,
-.vite-promo .link:focus {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #747bff;
+button:hover {
+  background: #6c8cff;
 }
 
-.vite-promo .thumb {
-  position: relative;
+button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
 }
 
-.vite-promo .thumb::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
 
-  display: block;
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  width: 100%;
-  height: 100%;
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
 
-  border-radius: 50%;
-  background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  filter: blur(4.5rem);
+.label {
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
 }
