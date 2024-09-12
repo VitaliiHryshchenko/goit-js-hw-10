@@ -39,4 +39,5 @@ function handlerSubmit(event) {
         message: `❌ Rejected promise in ${delay}ms`,
       });
     });
+  form.reset();
 }
